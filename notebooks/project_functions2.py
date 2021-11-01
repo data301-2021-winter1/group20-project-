@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 
+def unprocessed(pathname):
+    df = pd.read_csv(pathname)
+    return df
+
 def load_and_process(pathname):
 
     # Method Chain 1 (Load data and deal with missing data)
